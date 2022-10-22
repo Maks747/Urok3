@@ -1,0 +1,18 @@
+public class Main {
+    public static void main(String[] args) {
+
+        //Задайте массив из 5 любых целых чисел
+
+        int [] nums = new int[] {12, 5, 20, 1, 10};
+
+        //Поменяйте местами первый и последний элемент в массиве
+        int temp = nums [0];
+        nums [0] = nums[nums.length-1];
+        nums[nums.length-1] = temp;
+
+        // Вывести в консоль результат суммы первого и среднего элемента
+        int sum = nums[0] + nums[nums.length-3];
+
+        System.out.println(sum);
+    }
+}
